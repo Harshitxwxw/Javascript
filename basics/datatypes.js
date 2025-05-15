@@ -50,3 +50,34 @@ const myFunction = function () {    //  functions
 console.log(typeof myFunction);
 console.log(typeof myObj);
 console.log(typeof heros);
+
+
+
+
+//   ++++++++++++++++++++++++++++  Memory  +++++++++++++++++++++++++++
+
+
+
+//   Stack Memory (Primitive)   
+
+let myYt = "HarshitYoutube"
+let anotherName = myYt
+anotherName = 'gaming_channel'
+
+console.log(myYt);
+console.log(anotherName);
+
+
+
+// Heap Memory  (Non-Primitive)
+
+let userone = {
+    email : "user@gmail.com",
+    upi : "user450@yt"
+}
+
+let userTwo = userone
+
+userTwo.email = "jitesh@gmail.com"
+console.log(userone.email);
+console.log(userTwo.email);
