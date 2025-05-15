@@ -8,6 +8,9 @@ let converted_state= Number(state)
 let converted_space = Number(space)
 let con_bool = Number(bool)
 
+
+//    Conversion
+
 // console.log(typeof score)
 // console.log(typeof valueIn_number)
 // console.log( valueIn_number)
@@ -61,8 +64,29 @@ let str2 = " World"
 // console.log(+true)
 // console.log(+"")
 
-let counter = 90
-console.log(++counter);  //  91
-console.log(counter++);  //  91
+// let counter = 90
+// console.log(++counter);  //  91
+// console.log(counter++);  //  91
 
 
+//   Comparison
+
+// console.log("2" > 1);
+// console.log(2 > "1");
+
+// console.log(null > 0);
+// console.log(null == 0);
+// console.log(null <= 0);
+// console.log(null != 0);
+
+// console.log(undefined >=9);
+// console.log(undefined ==9);
+// console.log(undefined <9);
+// console.log(undefined !=9);
+
+
+// strict check   i.e  ===
+
+console.log("2" ===7 );
+console.log(2 === 2);
+console.log("2" !== 2);
