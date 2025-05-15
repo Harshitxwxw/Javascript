@@ -18,5 +18,5 @@ Prefer not to use var because of issue in block scope and function scope
 // console.log(account_Email);
 // console.log(account_Pass);
 // console.log(accountCity);
-// console.loglgoklgogo
+
 console.table([account_Id,account_Email,account_Pass,accountCity,accountState])
