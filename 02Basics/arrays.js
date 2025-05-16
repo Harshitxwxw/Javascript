@@ -65,8 +65,12 @@ const dc_heros = ['Superman','flash','batman']
 
 const another_arr = [1,2,3,[4,5,6],7,[6,7,[4,5]]]  
 
-const flatten_array = another_arr.flat(Infinity)   //  it will flat all arrays in one array
-// console.log(flatten_array);
+
+const flatten_array1 = another_arr.flat(1) 
+const flatten_array2 = another_arr.flat(Infinity)   //  it will flat all arrays in one array
+// console.log(flatten_array1);
+// console.log(flatten_array2);
+
 
 console.log(Array.isArray("Harshit"));
 console.log(Array.from("Harshit"));
