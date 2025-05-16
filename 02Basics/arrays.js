@@ -42,3 +42,36 @@ const myn2 = myArr.splice(1,3)  // it will return arr ele b/w (1,3)  1,3 -> incl
 console.log(myn2);
 
 console.log("C ",myArr);
+
+
+
+
+//   array Part - 2
+
+const marvel_Heros = ['IronMAn','Thor','Caption America']
+const dc_heros = ['Superman','flash','batman']
+
+// marvel_Heros.push(dc_heros)
+
+// console.log(marvel_Heros);
+// console.log(marvel_Heros[3][1]);
+
+// const all_heros = marvel_Heros.concat(dc_heros)  // concatenate two arrays
+
+// console.log(...marvel_Heros);    // it will spread all elements individually
+
+// const all_new_heros = [...marvel_Heros,...dc_heros]   //  spread two arrays
+
+
+const another_arr = [1,2,3,[4,5,6],7,[6,7,[4,5]]]  
+
+const flatten_array = another_arr.flat(Infinity)   //  it will flat all arrays in one array
+// console.log(flatten_array);
+
+console.log(Array.isArray("Harshit"));
+console.log(Array.from("Harshit"));
+console.log(Array.from({name :"Harshit"}));    // give empty array
+
+let a = 100, b = 200, c = 300
+
+console.log(Array.of(a,b,c));
