@@ -96,12 +96,56 @@ const users = [
         }
 ]
 
-console.log(users[1].email);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(users[1].email);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedin'));   //  true
-console.log(tinderUser.hasOwnProperty('age'));     // false
+// console.log(tinderUser.hasOwnProperty('isLoggedin'));   //  true
+// console.log(tinderUser.hasOwnProperty('age'));     // false
+
+
+
+
+
+// ++++++++++++++++++++ De-structuring of Objects ++++++++++++++++++++++
+
+const course ={
+    courseName : "Javascript course",
+    price : "999",
+    duration : "2 Months",
+    courseInstructor : "harsh"
+}
+// course.courseInstructor
+
+const {courseInstructor : Instructor} = course
+console.log(Instructor);
+
+
+// const navbar = ({company}) => {
+// }
+// navbar(company = "harshj")
+
+// //  JSON
+// {
+//     "name" : "Harshj",
+//     "couseName" : "Javascript course",
+//     "price" : "Free"
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
