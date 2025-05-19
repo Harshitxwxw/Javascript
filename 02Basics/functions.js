@@ -54,7 +54,7 @@ function returnArrayValues(getArray,pos) {
     console.log(getArray[pos-1]);
   
 }
-returnArrayValues(newArr,4)
+// returnArrayValues(newArr,4)
 
 
 
@@ -67,3 +67,24 @@ returnArrayValues(newArr,4)
 // console.log(loggIn_userMessage("Harshit"))
 
 
+
+// +++++++++++ SCOPE +++++++++
+
+
+// var c = 90
+let a = 300    //  Global  Scope
+
+
+if (true){
+    let a =100
+    const b = 200
+    var c = 300    //  it will update c , var is irrespective of scope
+
+    console.log("INNER : " ,a );   //  block scope
+     
+} 
+
+// console.log(a);      //  error -> a not defined
+// console.log(b);      //  error -> b not defined
+// console.log(c);      //   300
+console.log(a); 
