@@ -68,7 +68,7 @@ function returnArrayValues(getArray,pos) {
 
 
 
-// +++++++++++ SCOPE +++++++++
+// ++++++++++++++++++++++++ SCOPE ++++++++++++++++++++++++++++
 
 
 // var c = 90
@@ -80,11 +80,52 @@ if (true){
     const b = 200
     var c = 300    //  it will update c , var is irrespective of scope
 
-    console.log("INNER : " ,a );   //  block scope
+    // console.log("INNER : " ,a );   //  block scope
      
 } 
 
 // console.log(a);      //  error -> a not defined
 // console.log(b);      //  error -> b not defined
 // console.log(c);      //   300
-console.log(a); 
+// console.log(a); 
+
+
+function one() {
+    const user_Name = "Harshit"
+
+    function two() {
+        const webPage = "Youtube"
+        console.log(user_Name); 
+    }
+    // console.log(webPage);
+
+    two()
+}
+// one()
+
+
+if (true) {
+    const user_name ="Harsh"
+    if (user_name === "Harsh") {
+        const website = "Insta"
+        // console.log(user_name +  ' ' + website);
+    }
+    // console.log(website); 
+
+}
+
+
+//  ++++++++++++++++++   imp +++++++++++++++
+
+console.log(addOne (5))        //   Ans -> 6
+function addOne(num) {
+    return num +1
+}
+
+
+
+addTwo(6)        //  error
+const addTwo = function(num) {
+    return num +2
+}
+
