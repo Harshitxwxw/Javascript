@@ -22,8 +22,48 @@ function loggIn_userMessage(username = "Harsh") {
 }
 
 
+function calculateCartPrice(val1, val2,...num1) {
+    return num1
+}
+// console.log(calculateCartPrice(200,300,400,900));
+
+
+
+
+
+const user = {
+    userName : "Harsh",
+    price : 899
+}
+function handleObj(anyObj) {
+    console.log(`UserName is : ${anyObj.userName} ,and Price is : ${anyObj.price}`);
+    
+}
+// handleObj(user)
+// handleObj({
+//     userName : "Harsh",
+//     price : 899
+// })
+
+
+
+
+
+const newArr = [200,300,400,600]
+function returnArrayValues(getArray,pos) {
+    console.log(getArray[pos-1]);
+  
+}
+returnArrayValues(newArr,4)
+
+
+
+
+
 // printName()
 // addTwoNO(10,9)
 // console.log(`Sum of two Numbers is ${addTwoNO(10 , null)}`)
-console.log(loggIn_userMessage())
+// console.log(loggIn_userMessage())
 // console.log(loggIn_userMessage("Harshit"))
+
+
