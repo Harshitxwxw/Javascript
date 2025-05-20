@@ -40,6 +40,5 @@ const myCoding = [
 
 myCoding.forEach( (item) =>{
     console.log(item.langName);
-    
     // console.log(`Language Name is : ${item.langName} & Language File is : ${item.langFile}` );
 })
