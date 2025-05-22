@@ -38,3 +38,55 @@ buttons.forEach(function(button){
 })
 
 ```
+
+## Project 2 : BMI Calculator
+
+``` javascript
+const form = document.querySelector('form')
+
+//   This usecase will give empty
+// const height =parseInt(document.querySelector('#height').value)
+
+form.addEventListener('submit',function(e){
+  e.preventDefault()
+
+  const height =parseInt(document.querySelector('#height').value)
+  const weight =parseInt(document.querySelector('#weight').value)
+  const result =document.querySelector('#results')
+  let bmi ;
+
+  if(height === '' || height< 0 || isNaN(height)){
+    result.innerHTML = `Please give a valid height ${height}`
+  }
+  else if(weight === '' || weight< 0 || isNaN(weight)){
+    result.innerHTML = `Please give a valid weight : ${weight}`
+  }
+
+  else {
+     bmi = (weight/((height*height)/10000)).toFixed(2)
+
+    // show the result
+    result.innerHTML = `<span>${bmi}</span>`
+  }
+
+
+  //   Message show
+  const msgShow =document.querySelector('#msg')
+  let msg
+  if (bmi < 18.6){
+    msg = document.querySelector('#under').innerHTML
+  }
+
+  else if (18.6 <= bmi && bmi<= 24.9){
+    msg = document.querySelector('#normal').innerHTML
+  }
+
+  else {
+    msg = document.querySelector('#over').innerHTML
+  }
+
+  msgShow.innerHTML = `<span>${msg}</span>`
+
+
+})
+```
