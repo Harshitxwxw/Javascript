@@ -20,8 +20,12 @@
 </body>
 
 <script>
-    document.getElementById('owl').onclick = function () {
-        alert("Owl clicled")
-    }
+    // document.getElementById('owl').onclick = function () {
+    //     alert("Owl clicled")
+    // }
+
+    document.getElementById('owl').addEventListener('click',function (e) {
+        alert("Owl clicked")
+    })
 </script>
 </html>
