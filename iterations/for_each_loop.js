@@ -17,7 +17,7 @@ function printMe(item) {
 
 
 lang.forEach( (item, index, arr) => {
-    // console.log(item,index,arr);
+    console.log(item,index,arr);
 })
 
 
